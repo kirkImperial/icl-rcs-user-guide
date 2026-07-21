@@ -1,33 +1,20 @@
 # HX1
 
-!!! warning "HX1 offline 17-28 August 2026"
+The HX1 system, occasionally called Hex for short, is the High Performance Computing Cluster at Imperial with a low latency Infiniband network designed for "capability" workloads. It is useful for running three types of applications:
 
-    RCS will be undertaking an update to the HX1 service in August to align it with other HEX platforms and as such this will require it to physically move from Slough to the new Woking data centre. The move is being managed by our partner Lenovo to ensure a safe transition and to ensure the cluster is brought back to full service as soon a possible.
+   1. Multi-node workloads, typically requiring many parallelised CPUs communicating via MPIs.
+   2. GPU accelerated workloads that require double precision.
+   3. GPU accelerated workloads requiring more than 48GB of GPU RAM.
 
-    The move is scheduled for 17 - 28 August inclusive dates and during this period there will be no access to HX1. To enable the service to be shutdown, jobs will drain over the weekend and no job will commence if it would breach 08:00 on the 17 August.
-
-    Whilst the risk to the service is minimal, any data that is currently only on the local HX1 filesystem should be copied to the RDS or RDF-Active. We do not provide any automatic backup of data on HX1 and can only provide assurance for data if it is copied to RDS or RDF-Active. If you are unsure or require any assistance, please contact us via the support page
-
-
-HX1 (or Hex) is the High Performance Computing Cluster at Imperial with a low latency Infiniband network designed for "capability" workloads. More specifically, HX1 is designed for the following types of applications:
-
-* Multi-node parallel applications, typically using MPI to communicate between the compute nodes.
-* GPU accelerated scientific applications that require double precision.
-* GPU accelerated AI workloads requiring more than 48GB of GPU RAM.
-
-For all other workloads, we would please ask you to continue using the CX3 service; note that the L40s GPUs on CX3 have a newer GPU architecture (Ada Lovelace) and are generally faster than the A100s on HX1 for AI/ML workloads. If you are in any doubt whether your job is suited to HX1, please contact the [RCS](../support/index.md).
+For all other workloads, we ask you to use the CX3 service. This restriction is in place to ensure the efficient running of the HX1 facility for those users wishing to run large scale workloads. Moreover, for some for AI/ML workloads it may be better to work on the CX3 nodes fitted with the L40s GPUs due to the newer, faster architecture (Ada Lovelace) than what HX1 offers. If you are in any doubt whether your job is suited to HX1, you can [contact the RCS team](../support/index.md) via a support ticket or another channel.
 
 ## Cluster Specification
 
-Please go to the [HX1 section of our cluster specification page](./cluster-specification.md#hx1) for details of HX1.
+Please go to the [HX1 section of our cluster specification page](./cluster-specification.md#hx1) for details of HX1's hardware.
 
 ## Access
 
-!!! info
-
-    HX1 is designated for high-performance computing (HPC) users who run multi-node or GPU-accelerated workflows, requiring more than 48GB of GPU RAM and/or strong double-precision performance. Users should also have demonstrable experience with HPC clusters. This restriction is in place to ensure the efficient running of the HX1 facility for those users wishing to run large scale workloads.
-
-All users must already have access to the RCS HPC service before applying for access to HX1 - see [https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/get-access/](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/get-access/) for more information. Once you have access to the main RCS HPC facility, you can apply for access using [ServiceDesk Ask form](https://servicemgt.service-now.com/ask?id=sc_cat_item&sys_id=cbf5a4281b9c79101533a8a4bd4bcbea&sysparm_category=52a4a8f21be62110557837b5464bcbd24).
+All users must already have access to the RCS HPC service before applying for access to HX1. You gain access to our general RCS HPC services via the [Get Access](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/get-access/) page for more information. Once you have general access, you can then apply for access to HX1 specifically using a [ServiceDesk Ask form](https://servicemgt.service-now.com/ask?id=sc_cat_item&sys_id=cbf5a4281b9c79101533a8a4bd4bcbea&sysparm_category=52a4a8f21be62110557837b5464bcbd24) and you will receive a response as soon as possible. Because HX1 is a specialised HPC service, all applicants must be able to demonstrate experience with HPC clusters. The access request process takes time, so be sure to make your request well in advance of when you actually require access to the system.
 
 ### Groups
 
