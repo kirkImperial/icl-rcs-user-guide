@@ -38,7 +38,7 @@ Faculty/Department/Research Group/Storage Allocation/
     `smb://rdf-active.ic.ac.uk/research/fons/physics/my_research_group/my_group_share/`
 
 !!! tip
-    The path to your storage allocation is visible on the [RECAP](../../recap/recap-index.md) portal under the *Allocation Attributes*. In that section, you will find an *Attribute* called *Filesystem location* which will have a path of the form:
+    The path to your storage allocation is visible on the [RECAP](../../recap/index.md) portal under the *Allocation Attributes*. In that section, you will find an *Attribute* called *Filesystem location* which will have a path of the form:
 
     `/rdfactive/icl/faculty/department/research_group/storage_allocation/`
 
